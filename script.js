@@ -34,18 +34,7 @@ form.addEventListener('submit',e=>{
   setTimeout(()=>toast.classList.remove('show'),3500);
 });
 
-// ============================================================
-// ONE-TIME SETUP FOR DEVELOPER:
-// 1. Create a Supabase project.
-// 2. Paste Project URL and anon/public key below.
-// 3. Run the SQL supplied with this project in Supabase SQL Editor.
-// 4. Create an admin user in Supabase Authentication, then add
-//    that user's UUID to public.gyomo_admins using the SQL guide.
-// Never put a service_role key in this public HTML.
-// ============================================================
-const GYOMO_SUPABASE_URL = "PASTE_SUPABASE_PROJECT_URL_HERE";
-const GYOMO_SUPABASE_ANON_KEY = "PASTE_SUPABASE_ANON_KEY_HERE";
-
+/* Supabase URL and anon key are configured once at the top of this file. */
 const defaultGyomoSettings = {
   announcement_active: false,
   announcement_title: "This week's live cutting",
